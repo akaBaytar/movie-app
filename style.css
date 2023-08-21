@@ -1,0 +1,226 @@
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* resetting */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* project css */
+:root {
+  --background: #272829;
+  --primary: #61677a;
+  --secondary: #d8d9da;
+  --light: #fff6e0;
+}
+
+body {
+  background-color: var(--background);
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+}
+
+form {
+  width: 33%;
+  min-width: 15rem;
+  height: 2.5rem;
+  display: flex;
+  border: 1px solid var(--light);
+  overflow: hidden;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+form input {
+  border: none;
+  font-size: 0.75rem;
+  padding: 0.5rem;
+  width: 100%;
+  color: var(--background);
+  background-color: var(--primary);
+  transition: 0.3s color, 0.3s background-color;
+  -webkit-transition: 0.3s color, 0.3s background-color;
+  -moz-transition: 0.3s color, 0.3s background-color;
+  -ms-transition: 0.3s color, 0.3s background-color;
+  -o-transition: 0.3s color, 0.3s background-color;
+}
+
+input:hover {
+  background-color: var(--secondary);
+}
+
+input:hover + button {
+  color: var(--background);
+  background-color: var(--secondary);
+}
+
+input::placeholder {
+  color: var(--light);
+  font-size: 0.75rem;
+  letter-spacing: 0.05rem;
+  transition: 0.3s color;
+  -webkit-transition: 0.3s color;
+  -moz-transition: 0.3s color;
+  -ms-transition: 0.3s color;
+  -o-transition: 0.3s color;
+}
+
+input:hover::placeholder {
+  color: var(--background);
+}
+
+form button {
+  border: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--light);
+  background-color: var(--primary);
+  transition: 0.3s color, 0.3s background-color;
+  -webkit-transition: 0.3s color, 0.3s background-color;
+  -moz-transition: 0.3s color, 0.3s background-color;
+  -ms-transition: 0.3s color, 0.3s background-color;
+  -o-transition: 0.3s color, 0.3s background-color;
+}
+
+button:hover {
+  color: var(--background);
+  background-color: var(--secondary);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 5rem 2rem;
+  gap: 2rem;
+}
+
+.card {
+  --width: 20rem;
+  width: var(--width);
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.card img {
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.title {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.rating {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--light);
+  font-weight: 900;
+  background-color: var(--background);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.overview-container {
+  position: absolute;
+  height: calc(100% - 2rem);
+  bottom: 1rem;
+  left: 2rem;
+  right: 2rem;
+  padding: 1.5rem 2rem;
+  background-color: var(--background);
+  overflow: hidden;
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: 0.3s transform;
+  -webkit-transition: 0.3s transform;
+  -moz-transition: 0.3s transform;
+  -ms-transition: 0.3s transform;
+  -o-transition: 0.3s transform;
+}
+
+.card:hover .overview-container {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.overview-title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.overview {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+}
